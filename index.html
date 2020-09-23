@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <style>
+		@keyframes pulse {
+		  0% {
+			background-image: url("banedon0.jpg");
+		  }
+		  50% {
+			background-image: url("banedon1.jpg");
+		  }
+		  80% {
+			background-image: url("banedon1.jpg");
+		  }
+		  100% {
+			background-image: url("banedon0.jpg");
+		  }
+		}
+		@media (max-aspect-ratio: 1/1) {
+			body
+			{            
+				animation: pulse 2s infinite;
+				background-repeat: no-repeat;
+				background-position: center;
+				background-size: 150% auto;
+				background-color: black;
+			}
+		}
+		@media (min-aspect-ratio: 1/1) {
+			body
+			{            
+				animation: pulse 2s infinite;
+				background-repeat: no-repeat;
+				background-position: center;
+				background-color: black;
+				background-size: auto 100%;
+			}
+		}
+		
+        </style>  
+    </head>
+    <body/>
+</html>
